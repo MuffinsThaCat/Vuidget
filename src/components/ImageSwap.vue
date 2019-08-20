@@ -32,22 +32,30 @@
                     Desktop: "https://ptopads.com/wp-content/uploads/2019/05/fci-logo.png",
                     Tablet: "https://ptopads.com/wp-content/uploads/2019/05/fci-logo.png",
                     "Mobile Phone": "https://ptopads.com/wp-content/uploads/2019/05/fci-logo.png"
-                }, {
-                    id: "logo-adt",
-                    link: "https://www.adt.com/",
-                    Desktop: "https://ptopads.com/wp-content/themes/oi-mastertheme-lean/assets/images/svg/adt-new-logo.svg",
-                    Tablet: "https://ptopads.com/wp-content/themes/oi-mastertheme-lean/assets/images/svg/adt-new-logo.svg",
-                    "Mobile Phone": "https://ptopads.com/wp-content/themes/oi-mastertheme-lean/assets/images/svg/adt-new-logo.svg"
                 }
+
+                // Removed because Russ only wants 3 ads in the rotation.
+                // This will make the "ads" on large devices, appear to not rotate.
+
+                // , {
+                //     id: "logo-adt",
+                //     link: "https://www.adt.com/",
+                //     Desktop: "https://ptopads.com/wp-content/themes/oi-mastertheme-lean/assets/images/svg/adt-new-logo.svg",
+                //     Tablet: "https://ptopads.com/wp-content/themes/oi-mastertheme-lean/assets/images/svg/adt-new-logo.svg",
+                //     "Mobile Phone": "https://ptopads.com/wp-content/themes/oi-mastertheme-lean/assets/images/svg/adt-new-logo.svg"
+                // }
             ],
             showImages: [],
             width: 0
         }},
         methods: {
-            determineMediaType(width){
-                if(width > 1023){
+            determineMediaType(){
+
+                const minSize = Math.min(document.body.offsetWidth, document.body.offsetHeight);
+
+                if(minSize > 1023){
                     return { name: "Desktop", images: 3 };
-                } else if(width > 767){
+                } else if(minSize > 767){
                     return { name: "Tablet", images: 2 };
                 } else {
                     return { name: "Mobile Phone", images: 1 };
@@ -80,9 +88,8 @@
 
             },
             run(){
-                const width = document.body.offsetWidth;
 
-                const type = this.determineMediaType(width);
+                const type = this.determineMediaType();
 
                 this.device = type.name;
 
