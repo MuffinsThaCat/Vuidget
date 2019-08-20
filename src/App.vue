@@ -36,6 +36,12 @@ export default {
     }
     
   },
+  beforeMount(){
+    const meta = document.createElement("meta");
+    meta.name = "viewport";
+    meta.content = "width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+    document.head.appendChild(meta)
+},
   mounted() {
     this.$gtm.trackView('MyScreenName', 'currentpath');
   }

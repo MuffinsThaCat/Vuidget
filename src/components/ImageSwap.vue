@@ -14,7 +14,7 @@
             numberOfImagesToShow: 0,
             iteration: 0,
             images:[
-                {
+{
                     id: "logo-pods",
                     link: "https://pods.com/",
                     Desktop: "https://ptopads.com/vuidget/img/P02507-320x90-PillarToPost.jpg",
@@ -22,27 +22,23 @@
                     "Mobile Phone": "https://ptopads.com/vuidget/img/P02507-320x50-PillarToPost.jpg"
                 }, {
                     id: "logo-certapro",
-                    link: "https://certapro.com/",
-                    Desktop: "https://ptopads.com/wp-content/themes/oi-mastertheme-lean/assets/images/svg/certapro_logo.svg",
-                    Tablet: "https://ptopads.com/wp-content/themes/oi-mastertheme-lean/assets/images/svg/certapro_logo.svg",
-                    "Mobile Phone": "https://ptopads.com/wp-content/themes/oi-mastertheme-lean/assets/images/svg/certapro_logo.svg"
+                    link: "https://onlineimage.com/",
+                    Desktop: "https://place-hold.it/320x90?text=Image-2&Text&fontsize=20",
+                    Tablet: "https://place-hold.it/320x90?text=Image-2&Text&fontsize=20",
+                    "Mobile Phone": "https://place-hold.it/320x50?text=Image-2&Text&fontsize=20"
                 }, {
                     id: "logo-fci",
-                    link: "https://floorcoveringsinternational.com/",
-                    Desktop: "https://ptopads.com/wp-content/uploads/2019/05/fci-logo.png",
-                    Tablet: "https://ptopads.com/wp-content/uploads/2019/05/fci-logo.png",
-                    "Mobile Phone": "https://ptopads.com/wp-content/uploads/2019/05/fci-logo.png"
+                    link: "https://onlineimage.ca/",
+                    Desktop: "https://place-hold.it/320x90?text=Image-3&Text&fontsize=20",
+                    Tablet: "https://place-hold.it/320x90?text=Image-3&Text&fontsize=20",
+                    "Mobile Phone": "https://place-hold.it/320x50?text=Image-3&Text&fontsize=20"
                 }
-
-                // Removed because Russ only wants 3 ads in the rotation.
-                // This will make the "ads" on large devices, appear to not rotate.
-
-                // , {
+                // {
                 //     id: "logo-adt",
-                //     link: "https://www.adt.com/",
-                //     Desktop: "https://ptopads.com/wp-content/themes/oi-mastertheme-lean/assets/images/svg/adt-new-logo.svg",
-                //     Tablet: "https://ptopads.com/wp-content/themes/oi-mastertheme-lean/assets/images/svg/adt-new-logo.svg",
-                //     "Mobile Phone": "https://ptopads.com/wp-content/themes/oi-mastertheme-lean/assets/images/svg/adt-new-logo.svg"
+                //     link: "https://onlineimage.com/",
+                //     Desktop: "https://place-hold.it/320x90?text=Image-4&Text&fontsize=20",
+                //     Tablet: "https://place-hold.it/320x90?text=Image-4&Text&fontsize=20",
+                //     "Mobile Phone": "https://place-hold.it/320x50?text=Image-4&Text&fontsize=20"
                 // }
             ],
             showImages: [],
