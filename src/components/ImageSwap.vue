@@ -99,7 +99,7 @@
         },
         mounted(){
 
-            this.iteration = localStorage.getItem("iteration") || 0;
+            this.iteration = + localStorage.getItem("iteration") || 0;
             
             this.run();
             window.addEventListener("resize", this.run)
